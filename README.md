@@ -31,7 +31,7 @@ voir une seule feature de très bonne qualité à une dizaine de features faites
 * Vous livrerez votre projet sur un dépôt GitHub (public ou privé, à votre convenance).
 * Vous rendrez le livrable au maximum **dans un délai de 7 jours**.
 * Vous utiliserez Symfony et PHP pour la plus grosse partie de l'application.
-* Vous êtes libres d'utiliser la base de données de votre choix ou librairies pour réaliser le challenge.
+* Vous utiliserez un SGBD relationnel : PostgreSQL, MySQL ou MariaDB.
 
 ## Objectifs :rocket:
 
