@@ -1,0 +1,28 @@
+version: '3.4'
+services:
+  php:
+    user: ${FIXUID:-1000}:${FIXGID:-1000}
+    build:
+      context: ./docker
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      COMPOSER_HOME: /tmp/composer
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: yousign
+      POSTGRES_PASSWORD: 1234567890
+      POSTGRES_DB: gh-archive-keyword
+
+  adminer:
+    image: adminer:4.7
+    links:
+      - "postgres:db"
+    ports:
+      - "8080:8080"
