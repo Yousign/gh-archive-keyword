@@ -45,7 +45,7 @@ Le test d'acceptation associé au dashboard :
 
 ```Gherkin
 En tant qu'utiisateur du dashboard GH Archive Keyword
-Lorque je renseigne une date et un mot clé
+Lorsque je renseigne une date et un mot clé
 Alors pour les critères de recherche saisis le nombre total d'évènements est affiché
 Et le nombre total par type d'évènements est affiché 
 Et le nombre total par type d'évènements par heure est affiché
