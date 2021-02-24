@@ -1,25 +1,22 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
-        "php": ">=7.2.5",
+        "php": "7.4.*",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.11.99.1",
         "doctrine/doctrine-bundle": "^2.2",
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "doctrine/orm": "^2.8",
-        "symfony/console": "5.2.*",
-        "symfony/dotenv": "5.2.*",
+        "symfony/console": "4.4.*",
+        "symfony/dotenv": "4.4.*",
         "symfony/flex": "^1.3.1",
-        "symfony/framework-bundle": "5.2.*",
-        "symfony/proxy-manager-bridge": "5.2.*",
-        "symfony/yaml": "5.2.*"
+        "symfony/framework-bundle": "4.4.*",
+        "symfony/proxy-manager-bridge": "4.4.*",
+        "symfony/yaml": "4.4.*"
     },
     "config": {
-        "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"
         },
@@ -36,9 +33,15 @@
         }
     },
     "replace": {
+        "paragonie/random_compat": "2.*",
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php72": "*"
+        "symfony/polyfill-php74": "*",
+        "symfony/polyfill-php73": "*",
+        "symfony/polyfill-php72": "*",
+        "symfony/polyfill-php71": "*",
+        "symfony/polyfill-php70": "*",
+        "symfony/polyfill-php56": "*"
     },
     "scripts": {
         "auto-scripts": {
@@ -58,10 +61,12 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.2.*"
+            "require": "4.4.*"
         }
     },
     "require-dev": {
+        "symfony/browser-kit": "^4.4",
+        "symfony/css-selector": "^4.4",
         "symfony/phpunit-bridge": "^5.2"
     }
 }
