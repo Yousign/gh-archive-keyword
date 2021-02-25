@@ -52,6 +52,8 @@ Et le nombre total par type d'évènements par heure est affiché
 Et les 5 derniers commits sont visibles
 ```
 
+Ce dashboard n'est pas à réaliser, il s'agit d'un exemple qui illustre un cas d'usage de l'API.
+
 # How to use development environment :computer:
 
 You only need `make`, `docker` and `docker-compose` installed to start the development environment.
